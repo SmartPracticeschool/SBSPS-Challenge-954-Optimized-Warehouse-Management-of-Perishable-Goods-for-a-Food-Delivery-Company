@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Ml Flask</title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/bootstrap.css')}}">
+</head>
+<body>
+ 
+  <div align="center" class="bg-info">
+ <h1>Demand Prediction for 10 weeks</h1></div>
+ <div class="big" align="center">
+  <form action="{{url_for('predict')}}" method="POST">
+   <input type="submit" name="" value="Predict" class="btn btn-info">
+  </form>
+ </div>
+</body>
+</html>
